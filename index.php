@@ -12,7 +12,7 @@ if (isset($_POST['login']) && !empty($_POST['login'])) {
     $password = md5(trim_modified($_POST['password']));
     $user_type = trim_modified($_POST['user_type']);
 
-    $sql = "SELECT * FROM public.student WHERE studentno='$studentno' AND password='$password' AND user_type='$user_type' ";
+    $sql = "SELECT * FROM public.student WHERE studentno='$studentno' AND password='{$password}' AND user_type='{$user_type}' ";
     $data = pg_query($conn, $sql);
     $login_check = pg_num_rows($data);
     if ($login_check > 0) {
