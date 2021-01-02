@@ -33,6 +33,10 @@ if (isset($_POST['login']) && !empty($_POST['login'])) {
     }
 }
 if (!isset($_SESSION['studentno'], $_SESSION['password'])) {
+    echo 'login failed';
+    $_SESSION['errpropmt'] = "studentno or student password is not initialized";
+    header("location: index.php");
+}
 ?>
 
 
