@@ -1,4 +1,4 @@
-# [Student-Information-System-Php-PostgreSQL]
+# [Student-Information-System-Php-PostgreSQL - Grup Projesi]
 
 ## 📌 Overview - Genel Bakış
 - This repository features Student-Information-System project which inclides creating courses, enrolling or dropping courses as a student and checking information.
